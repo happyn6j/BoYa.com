@@ -1,0 +1,323 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: #444866;
+}
+li{
+	list-style: none;
+}
+.cl{
+	clear: both;
+}
+.logo,.join_btn,.more_btn_1,.more_btn_2,.icon_top,figure,.circle,.port:hover{
+	cursor: pointer;
+}
+/*头部开始*/
+.header{
+	width: 100%;
+	height: 58px;
+	background: #191D3A;
+}
+.header .header_box{
+	width: 1000px;
+	margin:0 auto;
+	background: red;
+}
+.header .header_box .logo{
+	width: 174px;
+	height: 58px;
+	background:url(../images/logo.png);
+	float: left;
+	margin-right: 42px;
+}
+.header .header_box .nav ul li{
+	float: left;
+	border-left: 1px solid rgba(255,255,255,0.1);
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+.header .header_box .nav ul li:first-child{
+	border-left: 1.5px solid rgba(255,255,255,0.1);
+}
+.header .header_box .nav ul li:last-child{
+	border-right: 1.5px solid rgba(255,255,255,0.1);
+}
+.header .header_box .nav ul li a{
+	width: 102px;
+	line-height: 58px;
+	text-align: center;
+	display: block;
+	color:#818496
+}
+.header .header_box .nav ul li:hover a{
+	color: #E2E4ED;
+}
+.header .header_box .nav ul .click{
+	background: rgba(255,255,255,0.1);
+	color: #E2E4ED;
+}
+.header .header_box .btn_box .join_btn{
+	width: 100px;
+	height: 34px;
+	background: #3CBF79;
+	border:none;
+	border-radius: 4px;
+	color: #fff;
+	float: right;
+	margin: 12px 20px;
+}
+.header .header_box .btn_box .join_btn:hover{
+	background: #2BA364;
+}
+/*头部结束*/
+/*轮播图开始*/
+.container{
+	width: 100%;
+	height: 463px;
+	background: red url(../images/banner.jpg) repeat-x -300px;
+	position: relative;
+}
+.container .icon_circle{
+	width: 135px;
+	position: absolute;
+	bottom: 20px;
+	left:50%;
+	margin-left: -60px;
+}
+.container .icon_circle ul li{
+	width: 12px;
+	height: 12px;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.4);
+	float: left;
+	margin-right: 15px;
+}
+.container .icon_circle ul li:first-child{
+	background: rgba(255,255,255,1);
+}
+/*轮播图结束*/
+/*中间内容区域开始*/
+.content{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.content .video_box{
+	width: 1045px;
+	overflow: hidden;
+}
+.content .video_box ul li{
+	float: left;
+	margin-right: 43px;
+}
+.content .video_box ul li figure figcaption{
+	text-align: center;
+}
+.content .video_box ul li figure figcaption h3{
+	color: #444866;
+	margin-top: 12px;
+}
+.content .video_box ul li figure figcaption span{
+	color: #38B774;
+	font-size: 12px;
+	line-height: 36px;
+}
+.content .video_box ul li figure figcaption span i{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	padding: 0;
+	border: 5px solid transparent;
+	border-left: 5px solid #38B774;
+	margin-left: 8px;
+}
+.content .video_box ul li figure:hover{
+	background: #38B774;
+	-webkit-animation-name: fadeIn; /*动画名称*/
+	-webkit-animation-duration: 1s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+	-webkit-animation-delay: 0s; /*延迟时间*/
+	
+}
+@keyframes fadeIn{
+	0% {
+		opacity: 0.1; /*初始状态 透明度为0*/
+	}
+	25%{
+		opacity: 0.4; 
+	}
+	50% {
+		opacity: 0.7; /*中间状态 透明度为0*/
+	}
+	100% {
+		opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+.content .video_box ul li figure:hover figcaption h3{
+	color: #fff;
+}
+.content .video_box ul li figure:hover figcaption span{
+	color: #fff;
+}
+.content .video_box ul li figure:hover figcaption span i{
+	border-left: 5px solid #fff;
+}
+.content .boundary{
+	width: 1000px;
+	/*height: 11px;*/
+	margin-top: 44px;
+} 
+.content .boundary .line_box{
+	width: 442px;
+	height: 6px;
+	border-bottom:1px solid #DBE1E7;
+}
+.content .boundary .box_l{
+	float: left;
+}
+.content .boundary .box_r{
+	float: right;
+}
+.content .boundary .spot_box{
+	width: 100px;
+	margin:0 auto;
+}
+.content .boundary .spot_box ul li{
+	width: 11px;
+	height: 11px;
+	float: left;
+	background: #B5C0CB;
+	margin:0 7px;
+	border-radius: 5px;
+}
+.content .boundary .spot_box ul li:first-child{
+	background: #2FBC71;
+}
+.content .details_box{
+	width: 1000px;
+	margin-top: 48px;
+}
+.content .details_box .news_box{
+	width: 479px;
+	height: 190px;
+	background: url(../images/bynewsbg.jpg);
+	float: left;
+	padding-left: 21px;
+	padding-top: 120px;
+	position: relative;
+}
+.content .details_box .news_box .more_btn_1{
+	width: 66px;
+	height: 28px;
+	background: url(../images/more.png) -1px;
+	position: absolute;
+	bottom: 242px;
+	left: 218px;
+}
+.content .details_box .news_box .more_btn_1:hover{
+	background: url(../images/more2.png);
+	border-radius: 8px;
+}
+.content .details_box .news_box ul li{
+	border-bottom: 1px solid #DBE1E7;
+}
+.content .details_box .news_box ul li span{
+	color: #AFBECF;
+	font-size: 11px;
+	line-height: 46px;
+	margin-right: 22px;
+}
+.content .details_box .news_box ul li a:hover{
+	color:#3FC07D;
+}
+.content .details_box .invite_box{
+	width: 500px;
+	height: 310px;
+	background:url(../images/byhrbg3.jpg);
+	float: right;
+	position: relative;
+}
+.content .details_box .invite_box img{
+	position: absolute;
+	left: 80px;
+	top:40px;
+}
+.content .details_box .invite_box .more_btn_2{
+	width: 66px;
+	height: 28px;
+	background: url(../images/more2.png);
+	position: absolute;
+	bottom: 242px;
+	left: 218px;
+}
+.content .details_box .invite_box .more_btn_2:hover{
+	background: url(../images/more.png) -1px;
+	border-radius: 8px;
+}
+.content .details_box .invite_box .text{
+	position: absolute;
+	left:20px;
+	top: 112px;
+}
+.content .details_box .invite_box .text h3{
+	color:#fff;
+	margin-bottom: 10px;
+}
+.content .details_box .invite_box .text ul li{
+	width: 304px;
+	border-bottom: 1px solid #6FDEA3;
+}
+.content .details_box .invite_box .text ul li a{
+	color: #fff;
+	line-height: 38px;
+
+}
+
+/*中间内容区域结束*/
+/*尾部开始*/
+.footer{
+	width: 100%;
+	height: 92px;
+	background: #191D3A;
+	margin-top: 58px;
+}
+.footer .box{
+	width: 1000px;
+	margin:0 auto;
+	padding-top: 40px;
+	position:relative;
+}
+.footer .box span,.footer .box span a{
+	color: #6C6E7E;
+	font-size: 13px;
+}
+.footer .box span a:hover{
+	color: #fff;
+}
+.footer .box span.num{
+	margin-left: 130px;
+}
+.footer .box a img{
+	width: 40px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	bottom:-20px;
+	border: none;
+}
+.footer .box .icon_top{
+	width: 68px;
+	height: 29px;
+	background: url(../images/top.png) 0px -40px;
+	position: absolute;
+	top: -14px;
+	right:-108px;
+}
+.footer .box .icon_top:hover{
+	background: url(../images/top.png);
+}
+/*尾部结束*/
